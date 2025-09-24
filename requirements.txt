@@ -10,3 +10,7 @@ django-allauth>=0.61
 dj-rest-auth[social]>=4.0
 requests>=2.31
 PyJWT[crypto]>=2.8
+
+# Dev tools
+black>=24.3.0
+ruff>=0.5.0
