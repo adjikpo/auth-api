@@ -44,6 +44,10 @@ API d'authentification (email + Google/Facebook) basée sur Django, Django REST 
 - Renseignez `.env`:
   - GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET
   - FACEBOOK_APP_ID, FACEBOOK_APP_SECRET
+
+Important:
+- Si ces variables restent vides, `make seed` affichera "Skipping google/facebook (missing env credentials)" et ne créera rien. Renseignez les valeurs puis relancez la seed.
+
 - Seed des SocialApp depuis `.env`:
   - make seed
   - Idempotent: met à jour/lie au Site (SITE_ID) sans dupliquer
